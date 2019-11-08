@@ -10,8 +10,21 @@ nav{
 }
 
 main{
-    padding-left: 10px;
-    padding-right: 10px;
+    background-color: #DDDDDD;
+    margin: 20px;
+    padding: 5px 20px;
+}
+
+footer{
+    color: white;
+    background-color: #404040;
+    height: 80px;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p{
+    margin-top: 30px;
 }
 
 h1{
@@ -67,6 +80,8 @@ h2{
     justify-content: center;
     text-align: center;
     background-image: url(../images/developer.png);
+    background-attachment: fixed;
+    background-position: left top;
 }
 
 .img-perfil{
