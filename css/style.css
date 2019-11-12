@@ -11,8 +11,10 @@ nav{
 
 main{
     background-color: #DDDDDD;
-    margin: 20px;
+    margin: 20px 200px;
     padding: 5px 20px;
+    border-radius: 10px;
+    text-align: justify;
 }
 
 footer{
@@ -94,4 +96,8 @@ h2{
     border: 5px solid white;
     border-radius: 50%;
     height: 100%;
+}
+
+.no-style-list{
+    list-style: none;
 }
