@@ -3,18 +3,33 @@ body{
     margin: 0px;
 }
 
+body.certificados{
+    background-image: url(../images/dev-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 nav{
     position: fixed;
+    top: 0px;
+    left: 0px;
     background-color: #404040;
     width: 100%;
 }
 
 main{
-    background-color: #DDDDDD;
-    margin: 20px 200px;
+    background-color: #DDDDDD;  
     padding: 5px 20px;
     border-radius: 10px;
     text-align: justify;
+}
+
+main.principal{
+    margin: 20px 15%;
+}
+
+main.certificados{
+    margin: 80px 15% 20px;
 }
 
 footer{
@@ -101,3 +116,4 @@ h2{
 .no-style-list{
     list-style: none;
 }
+
