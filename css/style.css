@@ -1,4 +1,5 @@
 body{
+    background-color: #DDDDDD;
     font-family: 'Segoe UI', sans-serif;
     margin: 0px;
 }
@@ -18,7 +19,7 @@ nav{
 }
 
 main{
-    background-color: #DDDDDD;  
+    background-color: white;
     padding: 5px 20px;
     border-radius: 10px;
     text-align: justify;
@@ -82,7 +83,6 @@ h2{
     display: block;
     transition-property: background-color;
     transition-duration: 300ms;
-    transition-timing-function: ease-in-out;
 }
 
 .navigation-list li a:hover{
@@ -113,7 +113,31 @@ h2{
     height: 100%;
 }
 
-.no-style-list{
-    list-style: none;
+.btn{
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    width: 70px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition-property: background-color;
+    transition-duration: 300ms;
 }
 
+.btn.github{
+    background-color: #2EBC4F;
+}
+
+.btn.github:hover{
+    background-color: #2DAA3F;
+}
+
+.btn.video{
+    background-color: #1A73E8;
+}
+
+.btn.video:hover{
+    background-color: #1A63C8;
+}
