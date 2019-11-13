@@ -20,7 +20,7 @@ nav{
 
 main{
     background-color: white;
-    padding: 5px 20px;
+    padding: 5px 20px 20px 20px;
     border-radius: 10px;
     text-align: justify;
 }
@@ -126,18 +126,35 @@ h2{
     transition-duration: 300ms;
 }
 
-.btn.github{
+.btn.primary{
     background-color: #2EBC4F;
 }
 
-.btn.github:hover{
+.btn.primary:hover{
     background-color: #2DAA3F;
 }
 
-.btn.video{
+.btn.secundary{
     background-color: #1A73E8;
 }
 
-.btn.video:hover{
+.btn.secundary:hover{
     background-color: #1A63C8;
+}
+
+.btn.secundary.low{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 5px 5px 5px 0px;
+}
+
+.center{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul.no-list-style{
+    list-style-type: none;
+    line-height: 28px;
 }
