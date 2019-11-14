@@ -10,15 +10,21 @@
 <body>
     <header> 
         <nav>
-            <ul class="navigation-list left">
-                <li><a href="index.html">Home</a></li><!--
-             --><li><a href="certificados.html">Certificações</a></li><!--
-             --><li><a href="#">Contato</a></li>
+            <ul id="listHamburguer" class="navigation-list">
+                <li><button id="btnHamburguer">| | |</button></li>
             </ul>
-            
-            <ul class="navigation-list right">
-                <li><a target="_blank" href="https://www.linkedin.com/in/mauricioeb/">LinkedIn</a></li>
-            </ul>
+
+            <div id="menu" class="hidden">
+                <ul class="navigation-list left">
+                    <li><a href="index.html">Home</a></li><!--
+                --><li><a href="certificados.html">Certificações</a></li><!--
+                --><li><a href="#">Contato</a></li>
+                </ul>
+                
+                <ul class="navigation-list right">
+                    <li><a target="_blank" href="https://www.linkedin.com/in/mauricioeb/">LinkedIn</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -35,6 +41,8 @@
     <footer>
         <p><em>Todos os direitos reservados</em></p>
     </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>

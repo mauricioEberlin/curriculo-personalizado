@@ -13,8 +13,7 @@ nav{
 }
 
 main{
-    padding: 5px 20px 20px 20px;
-    padding-bottom: 140px;
+    padding: 5px 20px 140px 20px;
     text-align: left;
 }
 
@@ -50,21 +49,34 @@ h2{
     font-size: 26px;
 }
 
-.navigation-list{
-    margin: 0px;
-    padding: 0px;
-}
-
-.navigation-list.left{
-    float: left;
-}
-
-.navigation-list.right{
+#listHamburguer{
     float: right;
 }
 
-.navigation-list li{
-    display: inline-block;
+#btnHamburguer{
+    color: white;
+    background-color: #404040;
+    border: none;
+    height: 60px;
+    font-size: 30px;
+    transition-property: background-color;
+    transition-duration: 300ms;
+}
+
+#btnHamburguer.active{
+    color: #404040;
+    background-color: white;
+}
+
+.hidden{
+    display: none;
+    visibility: hidden;
+}
+
+.navigation-list{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
 }
 
 .navigation-list li a{
@@ -75,6 +87,7 @@ h2{
     display: block;
     transition-property: background-color;
     transition-duration: 300ms;
+    border-top: 1px solid #606060;
 }
 
 .navigation-list li a:hover{
@@ -108,11 +121,11 @@ h2{
 .btn{
     color: white;
     display: inline-block;
-    padding: 10px;
     width: 70px;
+    padding: 10px;
     border-radius: 4px;
-    text-align: center;
     text-decoration: none;
+    text-align: center;
     font-weight: bold;
     transition-property: background-color;
     transition-duration: 300ms;
@@ -147,15 +160,15 @@ h2{
 }
 
 ul.lista-certificados{
-    list-style-type: none;
     padding: 10px;
     line-height: 22px;
+    list-style-type: none;
 }
 
 ul.lista-certificados li{
-    border-bottom: 1px solid #AAAAAA;
     padding-top: 5px;
     padding-bottom: 5px;
+    border-bottom: 1px solid #AAAAAA;
 }
 
 @media screen and (min-width: 900px){
@@ -174,6 +187,28 @@ ul.lista-certificados li{
         margin-left: 15vw;
         margin-right: 15vw;
         text-align: justify;
+    }
+    
+    #listHamburguer{
+        display: none;
+        visibility: hidden;
+    }
+
+    #menu{
+        display: block;
+        visibility: visible;
+    }
+    
+    .navigation-list.left{
+        float: left;
+    }
+    
+    .navigation-list.right{
+        float: right;
+    }
+    
+    .navigation-list li{
+        display: inline-block;
     }
 
     .hero{
