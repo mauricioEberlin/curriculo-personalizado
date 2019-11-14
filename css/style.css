@@ -59,8 +59,7 @@ h2{
     border: none;
     height: 60px;
     width: 60px;
-    font-size: 30px;
-    -webkit-transform: rotate(90deg);
+    font-size: 18px;
     transition-property: background-color;
     transition-duration: 300ms;
 }
