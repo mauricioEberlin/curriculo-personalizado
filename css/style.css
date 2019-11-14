@@ -1,15 +1,8 @@
 body{
-    background-color: #DDDDDD;
     font-family: 'Segoe UI', sans-serif;
     margin: 0px;
     position: relative;
     min-height: 100vh;
-}
-
-body.certificados{
-    background-image: url(../images/dev-background.jpg);
-    background-size: cover;
-    background-position-x: -300px;
 }
 
 nav{
@@ -20,20 +13,14 @@ nav{
 }
 
 main{
-    background-color: white;
     padding: 5px 20px 20px 20px;
-    margin-left: 15%;
-    margin-right: 15%;
-    text-align: justify;
-}
-
-main.principal{
     padding-bottom: 140px;
+    text-align: left;
 }
 
 main.secundario{
-    margin-top: 80px;
-    border-radius: 10px;
+    padding-top: 80px;
+    text-align: left;
 }
 
 footer{
@@ -95,7 +82,7 @@ h2{
 }
 
 .hero{
-    height: 50vh;
+    height: 55vh;
     padding: 50px 25px;
     display: flex;
     flex-direction: column;
@@ -148,9 +135,9 @@ h2{
 }
 
 .btn.secundary.low{
+    margin-right: 5px;
     padding-top: 0px;
     padding-bottom: 0px;
-    margin: 5px 5px 5px 0px;
 }
 
 .center{
@@ -159,7 +146,45 @@ h2{
     margin-right: auto;
 }
 
-ul.no-list-style{
+ul.lista-certificados{
     list-style-type: none;
-    line-height: 28px;
+    padding: 10px;
+    line-height: 22px;
+}
+
+ul.lista-certificados li{
+    border-bottom: 1px solid #AAAAAA;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+@media screen and (min-width: 900px){
+    body{
+        background-color: #DDDDDD;
+    }
+    
+    body.certificados{
+        background-image: url(../images/dev-background.jpg);
+        background-size: cover;
+        background-position-x: -300px;
+    }
+    
+    main{
+        background-color: white;
+        margin-left: 15vw;
+        margin-right: 15vw;
+        text-align: justify;
+    }
+
+    .hero{
+        height: 50vh;
+    }
+    
+    ul.lista-certificados{
+        line-height: 28px;
+    }
+
+    ul.lista-certificados li{
+        border-bottom: none;
+    }
 }
