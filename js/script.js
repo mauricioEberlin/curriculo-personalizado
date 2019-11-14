@@ -1,7 +1,7 @@
-window.document.onload = function(e){ 
+window.onload = function(e){
     var $body = document.querySelector('body');
-    $body.classList.remove('no-js')
-    $body.classList.add('js')
+    $body.classList.remove('no-js');
+    $body.classList.add('js');
 }
 
 var botaoHamburguer = document.getElementById("btnHamburguer");

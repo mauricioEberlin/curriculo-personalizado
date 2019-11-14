@@ -58,7 +58,9 @@ h2{
     background-color: #404040;
     border: none;
     height: 60px;
+    width: 60px;
     font-size: 30px;
+    -webkit-transform: rotate(90deg);
     transition-property: background-color;
     transition-duration: 300ms;
 }
